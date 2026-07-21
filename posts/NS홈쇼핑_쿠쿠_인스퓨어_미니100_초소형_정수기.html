@@ -7,6 +7,7 @@
 <meta name="description" content="NS홈쇼핑에서 방송된 쿠쿠 인스퓨어 미니100 정수기의 특징과, 렌탈 vs 직접구매 비교 포인트를 정리했습니다.">
 <link rel="stylesheet" href="../assets/style.css">
 
+<!-- Google AdSense: 승인 후 발급받는 스크립트 태그를 여기에 삽입 -->
 </head>
 <body>
 <header class="site-header">
@@ -35,11 +36,29 @@
 </article>
 
 </main>
+<!-- 광고 영역: 애드센스 승인 후 슬롯 코드를 여기에 삽입 (본문과 명확히 분리된 위치) -->
 <footer class="site-footer">
   <a href="../about.html">소개</a>
   <a href="../contact.html">문의</a>
   <a href="../privacy.html">개인정보처리방침</a>
   <p class="copyright">&copy; 본방사수</p>
 </footer>
+<div id="cookie-consent" class="cookie-consent" hidden>
+  <p>이 사이트는 광고 제공 및 이용 통계를 위해 쿠키를 사용합니다.
+  자세한 내용은 <a href="../privacy.html">개인정보처리방침</a>에서 확인하실 수 있습니다.</p>
+  <button id="cookie-consent-ok" type="button">확인했습니다</button>
+</div>
+<script>
+(function () {
+  var KEY = "cookieConsentOk";
+  var el = document.getElementById("cookie-consent");
+  if (!el) return;
+  if (!localStorage.getItem(KEY)) { el.hidden = false; }
+  document.getElementById("cookie-consent-ok").addEventListener("click", function () {
+    localStorage.setItem(KEY, "1");
+    el.hidden = true;
+  });
+})();
+</script>
 </body>
 </html>
