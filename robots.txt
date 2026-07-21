@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kimst33333.github.io/sitemap.xml
