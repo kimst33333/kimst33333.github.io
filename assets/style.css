@@ -1,0 +1,223 @@
+/* ==========================================================================
+   본방사수 — 정적 사이트 스타일 (어르신 친화 + 애드센스 친화)
+   레이아웃을 전부 이 파일이 통제하므로 남의 테마와 충돌할 일이 없다.
+   ========================================================================== */
+
+:root {
+  --accent: #C8553D;
+  --accent-dark: #8a3a2a;
+  --bg: #FDFBF6;
+  --card-bg: #ffffff;
+  --border: #ECE4D6;
+  --text: #222222;
+  --text-muted: #666666;
+  --link: #1a4fa0;
+  --link-visited: #5b3a8f;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Malgun Gothic", "맑은 고딕", "Nanum Gothic", sans-serif;
+  font-size: 19px;
+  line-height: 1.85;
+  color: var(--text);
+  background-color: var(--bg);
+}
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+a:visited { color: var(--link-visited); }
+a:hover, a:focus { color: var(--accent); }
+
+/* ---- 헤더 ---- */
+.site-header {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 28px 20px 16px;
+  border-bottom: 3px solid var(--border);
+}
+.site-header .logo {
+  display: block;
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--accent) !important;
+  text-decoration: none !important;
+  margin-bottom: 14px;
+}
+.top-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.top-nav a {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-weight: 700;
+  color: var(--text) !important;
+  text-decoration: none !important;
+  background-color: transparent;
+}
+.top-nav a:hover, .top-nav a.active {
+  background-color: #F1E9DC;
+  color: var(--accent-dark) !important;
+}
+
+/* ---- 본문 폭 ---- */
+.content {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 28px 20px 60px;
+}
+
+.page-title {
+  font-size: 26px;
+  font-weight: 800;
+  margin: 0 0 20px;
+}
+
+/* ---- 글 목록(카드) ---- */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.post-card {
+  display: block;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px 26px;
+  text-decoration: none !important;
+  color: var(--text) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+}
+.post-card:hover { border-color: var(--accent); }
+.post-card h2 {
+  margin: 6px 0 10px;
+  font-size: 22px;
+  color: #1a1a1a;
+}
+.post-meta {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin: 0;
+  font-weight: 700;
+}
+.post-excerpt {
+  margin: 0;
+  color: #444;
+  font-size: 17px;
+}
+
+/* ---- 개별 글 페이지 ---- */
+.post, .static-page {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 30px 34px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+.post h1, .static-page h1 {
+  font-size: 28px;
+  line-height: 1.4;
+  margin: 8px 0 20px;
+  color: #1a1a1a;
+}
+.post h2, .static-page h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 34px;
+  border-left: 6px solid var(--accent);
+  padding-left: 12px;
+}
+.post h3, .static-page h3 {
+  font-size: 21px;
+  font-weight: 700;
+  margin-top: 26px;
+  color: #333;
+}
+.post p, .static-page p, .post li {
+  font-size: 19px;
+  line-height: 1.9;
+}
+.post blockquote, .static-page blockquote {
+  background-color: #FFF8ED;
+  border-left: 5px solid #E0A64C;
+  padding: 14px 18px;
+  font-size: 17px;
+  color: #555;
+  margin: 16px 0;
+}
+.post table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 18px;
+  margin: 18px 0;
+}
+.post table th, .post table td {
+  border: 1px solid #d8d0c0;
+  padding: 12px 14px;
+  text-align: left;
+}
+.post table th {
+  background-color: #F1E9DC;
+  font-weight: 700;
+}
+.post img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin: 16px 0;
+  display: block;
+}
+
+/* 구매/확인 링크는 큼직한 버튼으로 */
+.post a[href*="coupang"],
+.post a[rel*="sponsored"] {
+  display: inline-block;
+  background-color: var(--accent);
+  color: #ffffff !important;
+  text-decoration: none !important;
+  padding: 14px 22px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 19px;
+  margin: 10px 0;
+}
+.post a[href*="coupang"]:hover,
+.post a[rel*="sponsored"]:hover { background-color: var(--accent-dark); }
+
+/* ---- 바닥글 ---- */
+.site-footer {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 24px 20px 50px;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-muted);
+}
+.site-footer a {
+  margin: 0 10px;
+  color: #555 !important;
+}
+.site-footer .copyright {
+  margin-top: 14px;
+  font-size: 14px;
+  color: #999;
+}
+
+/* ---- 모바일 ---- */
+@media screen and (max-width: 640px) {
+  body { font-size: 18px; }
+  .site-header .logo { font-size: 28px; }
+  .post, .static-page { padding: 20px 18px; border-radius: 12px; }
+  .post h1, .static-page h1 { font-size: 24px; }
+  .post-card { padding: 18px 20px; }
+}
