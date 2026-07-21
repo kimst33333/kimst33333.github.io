@@ -109,12 +109,14 @@ a:hover, a:focus { color: var(--accent); }
 .hero-card:hover { transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,0.09); }
 .hero-thumb {
   width: 100%;
-  max-height: 320px;
+  height: 220px;
   object-fit: cover;
+  object-position: center;
   display: block;
 }
-.hero-body { padding: 22px 26px 26px; }
-.hero-body h2 { margin: 8px 0 10px; font-size: 26px; color: #1a1a1a; }
+.hero-body { padding: 20px 26px 28px; }
+.hero-body h2 { margin: 10px 0 12px; font-size: 27px; line-height: 1.4; color: #1a1a1a; }
+.hero-body .post-excerpt { font-size: 18px; }
 
 /* ---- 글 목록(카드) ---- */
 .post-list {
