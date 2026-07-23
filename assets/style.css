@@ -280,6 +280,7 @@ a:hover, a:focus { color: var(--accent); }
   font-size: 16px;
   z-index: 100;
 }
+.cookie-consent[hidden] { display: none; }
 .cookie-consent p { margin: 0; max-width: 640px; }
 .cookie-consent a { color: #ffd9c8 !important; }
 .cookie-consent button {
