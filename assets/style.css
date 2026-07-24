@@ -151,9 +151,9 @@ a:hover, a:focus { color: var(--accent); }
 .badge {
   display: inline-block;
   color: #fff;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
-  padding: 3px 10px;
+  padding: 4px 12px;
   border-radius: 999px;
   margin-right: 6px;
 }
@@ -400,4 +400,12 @@ a:hover, a:focus { color: var(--accent); }
   .hero-body h2 { font-size: 22px; }
   .cookie-consent { justify-content: flex-start; text-align: left; }
   #back-to-top { right: 14px; bottom: 76px; min-width: 84px; font-size: 15px; padding: 8px 12px; }
+  /* 카테고리가 늘어나 메뉴가 여러 줄로 줄바꿈되지 않도록, 한 줄로 좌우 스와이프 */
+  .top-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+  }
+  .top-nav a { flex-shrink: 0; }
 }
