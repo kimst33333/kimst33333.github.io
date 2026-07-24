@@ -311,6 +311,31 @@ a:hover, a:focus { color: var(--accent); }
 .post a[href*="coupang"]:hover,
 .post a[rel*="sponsored"]:hover { background-color: var(--accent-dark); }
 
+/* 방송 채널 자체 참고링크(GS샵/NS홈쇼핑/롯데홈쇼핑/공영쇼핑)도 버튼으로 —
+   구매링크(주황)와 헷갈리지 않게 톤은 다르게(테두리만 있는 버튼) */
+.post a[href*="gsshop.com"],
+.post a[href*="nsmall.com"],
+.post a[href*="lotteimall.com"],
+.post a[href*="gongyoungshop.kr"] {
+  display: inline-block;
+  background-color: #fff;
+  color: var(--link) !important;
+  text-decoration: none !important;
+  border: 2px solid var(--link);
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.post a[href*="gsshop.com"]:hover,
+.post a[href*="nsmall.com"]:hover,
+.post a[href*="lotteimall.com"]:hover,
+.post a[href*="gongyoungshop.kr"]:hover {
+  background-color: var(--link);
+  color: #fff !important;
+}
+
 /* ---- 바닥글 ---- */
 .site-footer {
   max-width: 860px;
