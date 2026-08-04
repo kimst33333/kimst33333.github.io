@@ -1,3 +1,6 @@
 User-agent: *
 Allow: /
 Sitemap: https://kimst33333.github.io/sitemap.xml
+
+# Daum 웹마스터도구 소유 확인
+tvblog0805
