@@ -373,19 +373,34 @@ a:hover, a:focus { color: var(--accent); }
 }
 .cookie-consent[hidden] { display: none; }
 .cookie-consent p { margin: 0; max-width: 640px; }
-.cookie-consent a { color: #ffd9c8 !important; }
-.cookie-consent button {
-  background-color: var(--accent);
-  color: #fff;
-  border: none;
+.cookie-consent-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.cookie-consent button, .cookie-consent-actions a {
   border-radius: 8px;
   padding: 10px 18px;
   font-size: 16px;
   font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
+  text-decoration: none;
 }
-.cookie-consent button:hover { background-color: var(--accent-dark); }
+#cookie-consent-accept {
+  background-color: var(--accent);
+  color: #fff;
+  border: none;
+}
+#cookie-consent-accept:hover { background-color: var(--accent-dark); }
+#cookie-consent-reject {
+  background-color: transparent;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
+}
+#cookie-consent-reject:hover { background-color: rgba(255,255,255,0.1); }
+#cookie-consent-manage {
+  color: #ffd9c8 !important;
+  border: none;
+  padding: 10px 4px;
+}
+#cookie-consent-manage:hover { text-decoration: underline; }
 
 /* ---- 모바일 ---- */
 @media screen and (max-width: 640px) {
