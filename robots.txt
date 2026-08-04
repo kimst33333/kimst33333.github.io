@@ -3,4 +3,4 @@ Allow: /
 Sitemap: https://kimst33333.github.io/sitemap.xml
 
 # Daum 웹마스터도구 소유 확인
-tvblog0805
+#DaumWebMasterTool:4440057ce602475d2a026c944405e49365d9d5720d57d15175e8a9e3e8660276:lz95XezL/vZ7uH8/mt6pWg==
