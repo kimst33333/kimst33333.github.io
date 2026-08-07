@@ -25,8 +25,15 @@ body {
   color: var(--text);
   background-color: var(--bg);
   background-image:
+    radial-gradient(ellipse 620px 620px at 6% 10%, rgba(200,85,61,0.13), transparent 62%),
+    radial-gradient(ellipse 680px 680px at 96% 42%, rgba(224,166,76,0.16), transparent 60%),
+    radial-gradient(ellipse 520px 520px at 4% 88%, rgba(224,166,76,0.13), transparent 62%),
+    radial-gradient(ellipse 560px 560px at 98% 92%, rgba(200,85,61,0.11), transparent 62%),
     radial-gradient(circle at 1px 1px, rgba(200,85,61,0.07) 1.5px, transparent 0);
-  background-size: 26px 26px;
+  background-position: 0 0, 0 0, 0 0, 0 0, 0 0;
+  background-size: auto, auto, auto, auto, 26px 26px;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat;
+  background-attachment: fixed, fixed, fixed, fixed, scroll;
 }
 
 a {
