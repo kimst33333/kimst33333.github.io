@@ -411,6 +411,25 @@ a:hover, a:focus { color: var(--accent); }
   color: #fff !important;
 }
 
+/* ---- 관련 글 (내부링크) ---- */
+.related-posts {
+  max-width: 860px;
+  margin: 22px auto 0;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 22px 28px 26px;
+}
+.related-posts h2 {
+  font-size: 20px;
+  margin: 0 0 12px;
+  border-left: 6px solid var(--accent);
+  padding-left: 12px;
+}
+.related-posts ul { margin: 0; padding-left: 22px; }
+.related-posts li { font-size: 18px; margin: 8px 0; }
+.related-posts a { font-weight: 700; }
+
 /* ---- 바닥글 ---- */
 .site-footer {
   max-width: 860px;
