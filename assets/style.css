@@ -273,6 +273,41 @@ a:hover, a:focus { color: var(--accent); }
   font-size: 17px;
 }
 
+/* ---- 페이지네이션 (홈 목록이 너무 길어지지 않게) ---- */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.pagination-btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none !important;
+  background-color: var(--accent);
+  color: #fff !important;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+.pagination-btn:hover { background-color: var(--accent-dark); }
+.pagination-btn.pagination-disabled {
+  background-color: #EDE5D8;
+  color: #a89e8c !important;
+  box-shadow: none;
+  cursor: default;
+}
+.pagination-status {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
 /* ---- 개별 글 페이지 ---- */
 .post, .static-page {
   background-color: var(--card-bg);
