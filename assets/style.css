@@ -450,6 +450,15 @@ a:hover, a:focus { color: var(--accent); }
   font-size: 14px;
   color: #999;
 }
+.visitor-counter {
+  display: inline-block;
+  margin-top: 16px;
+}
+.visitor-counter img {
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
 
 /* ---- 쿠키 동의 배너 (구글 애드센스 EU 사용자 동의 정책 대비) ---- */
 .cookie-consent {
