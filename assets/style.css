@@ -528,3 +528,10 @@ a:hover, a:focus { color: var(--accent); }
   }
   .top-nav a { flex-shrink: 0; }
 }
+
+/* 글이 아직 없는 카테고리 안내 (2026-09-29) */
+.empty-note {
+  padding: 1.5rem;
+  color: #5b6470;
+  font-size: 1.0625rem;
+}
